@@ -10,3 +10,7 @@
     /**object-position: 0 80%;**/
     height: 400px;
 }
+
+.fonte-titulo {
+    font-family: 'Pacifico', cursive;
+}
