@@ -11,6 +11,10 @@
     height: 400px;
 }
 
+.card-tamanho{
+    max-width: 18rem;
+}
+
 .fonte-titulo {
     font-family: 'Pacifico', cursive;
 }
@@ -26,4 +30,9 @@
 
 .border-color {
     border-color: darkred;
+}
+
+.tamanho-da-imagem {
+    object-fit: cover;
+    height: 200px;
 }

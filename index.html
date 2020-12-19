@@ -14,8 +14,8 @@
 <body>
 
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <a class="navbar-brand" href="#">Fruta & Fruto</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand fonte-titulo" href="#"><span class="cor-especial">Fruta & Fruto</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -24,7 +24,7 @@
         <li><a class="nav-item nav-link active" href="#">inicio <span class="sr-only">(current)</span></a></li>
         <li><a class="nav-item nav-link" href="#">receitas</a></li>
         <li><a class="nav-item nav-link" href="#">quem somos</a></li>
-        <li><a class="nav-item nav-link" href="#">contato</a></li>
+        <li><a class="nav-item nav-link" data-toggle="modal" data-target="#contato-modal" href="#">contato</a></li>
       </ul>
     </div>
   </nav>
@@ -68,72 +68,118 @@
   <p class="text-center text-secondary pb-4">Nossas receitas ajudam você a aproveitar melhor os alimentos, economizar, ganhar tempo e praticidade</p>
 </section>
 
-<section id="receitas">
-  <div class="card border-color" style="width: 18rem;">
-    <img src="src/img/receita-abacate.jpg" class="card-img-top" alt="tigela com salada de abacate, vista superior">
-    <div class="card-body">
-      <h5 class="card-title">Tigela de abacate</h5>
-      <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
-      <a href="#" class="btn botao-cor">Ler receita ... </a>
-    </div>
   </div>
 
-    <div class="card border-color" style="width: 18rem;">
-      <img src="src/img/receita-kiwi.jpg" class="card-img-top" alt="tigela de mingau com kiwi, vista superior">
-      <div class="card-body">
-        <h5 class="card-title">Salada de kiwi</h5>
-        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
-        <a href="#" class="btn botao-cor">Ler receita ... </a>
-      </div>
-    </div>
+<div class=" bg-light">
+  <section class="container" id="receitas">
+    <div class="row justify-content-center">
 
-    <div class="card border-color" style="width: 18rem;">
-      <img src="src/img/receita-mix.jpg" class="card-img-top" alt="prato com mix de vegetais e mão de pessoa adicionando azeite, vista superior">
-      <div class="card-body">
-        <h5 class="card-title">Mix de vegetais</h5>
-        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
-        <a href="#" class="btn botao-cor">Ler receita ... </a>
-      </div>
-    </div>
+      <article class="card border-color card-tamanho p-0 m-4 col-12 col-md-4">
+        <img src="src/img/receita-abacate.jpg" class="card-img-top tamanho-da-imagem" alt="tigela com salada de abacate, vista superior">
+        <div class="card-body">
+          <h5 class="card-title">Tigela de abacate</h5>
+          <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+          <a href="#" class="btn botao-cor">Ler receita ... </a>
+        </div>
+      </article>
 
-    <div class="card border-color" style="width: 18rem;">
-      <img src="src/img/receita-pimentoes.jpg" class="card-img-top" alt="prato de salada de pimentões com alguns ingredientes ao lado, vista superior">
-      <div class="card-body">
-        <h5 class="card-title">Pimentões à Juliana</h5>
-        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
-        <a href="#" class="btn botao-cor">Ler receita ... </a>
-      </div>
-    </div>
+      <article class="card border-color card-tamanho p-0 m-4 col-12 col-md-4">
+        <img src="src/img/receita-kiwi.jpg" class="card-img-top tamanho-da-imagem" alt="tigela de mingau com kiwi, vista superior">
+        <div class="card-body">
+          <h5 class="card-title">Salada de kiwi</h5>
+          <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+          <a href="#" class="btn botao-cor">Ler receita ... </a>
+        </div>
+      </article>
 
-    <div class="card border-color" style="width: 18rem;">
-      <img src="src/img/receita-oriental.jpg" class="card-img-top" alt="tigela com salada de vegetais estilo oriental, vista de cima">
-      <div class="card-body">
-        <h5 class="card-title">Prato oriental</h5>
-        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
-        <a href="#" class="btn botao-cor">Ler receita ... </a>
-      </div>
-    </div>
+      <article class="card border-color card-tamanho p-0 m-4 col-12 col-md-4">
+        <img src="src/img/receita-mix.jpg" class="card-img-top tamanho-da-imagem" alt="prato com mix de vegetais e mão de pessoa adicionando azeite, vista superior">
+        <div class="card-body">
+          <h5 class="card-title">Mix de vegetais</h5>
+          <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+          <a href="#" class="btn botao-cor">Ler receita ... </a>
+        </div>
+      </article>
 
-    <div class="card border-color" style="width: 18rem;">
-      <img src="src/img/receita-beterrabas.jpg" class="card-img-top" alt="tigela com beterrabas e dentes de alho assados em primeiro plano, com ingredientes ao fundo">
-      <div class="card-body">
-        <h5 class="card-title">Beterrabas assadas</h5>
-        <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
-        <a href="#" class="btn botao-cor">Ler receita ... </a>
-      </div>
-    </div>
+      <article class="card border-color card-tamanho p-0 m-4 col-12 col-md-4">
+        <img src="src/img/receita-pimentoes.jpg" class="card-img-top tamanho-da-imagem" alt="prato de salada de pimentões com alguns ingredientes ao lado, vista superior">
+        <div class="card-body">
+          <h5 class="card-title">Pimentões à Juliana</h5>
+          <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+          <a href="#" class="btn botao-cor">Ler receita ... </a>
+        </div>
+      </article>
 
-</section>
-  </div>
+      <article class="card border-color card-tamanho p-0 m-4 col-12 col-md-4">
+        <img src="src/img/receita-oriental.jpg" class="card-img-top tamanho-da-imagem" alt="tigela com salada de vegetais estilo oriental, vista de cima">
+        <div class="card-body">
+          <h5 class="card-title">Prato oriental</h5>
+          <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+          <a href="#" class="btn botao-cor">Ler receita ... </a>
+        </div>
+      </article>
+
+      <article class="card border-color card-tamanho p-0 m-4 col-12 col-md-4">
+        <img src="src/img/receita-beterrabas.jpg" class="card-img-top tamanho-da-imagem" alt="tigela com beterrabas e dentes de alho assados em primeiro plano, com ingredientes ao fundo">
+        <div class="card-body">
+          <h5 class="card-title">Beterrabas assadas</h5>
+          <p class="card-text">Receita refrescante e cheia de vitaminas para o seu café da manhã!</p>
+          <a href="#" class="btn botao-cor">Ler receita ... </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</div>
+
 </main>
 
-  <p>contato:<a href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
+
+<footer class="bg-secondary p-3">
+  <p class="text-light m-0 text-center">Contato:<a class="text-light" href="mailto:email@frutafruto.com.br"> email@frutafruto.com.br </a></p>
+</footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src=""></script>
+<!-- Modal -->
+<section class="modal fade" id="contato-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <article class="modal-content">
+      <header class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </header>
+      <main class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput2">Nome:</label>
+              <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Seu nome...">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email:</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Mensagem:</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Digite sua mensagem aqui"></textarea>
+            </div>
+          </form>
+      </main>
+      <footer class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn botao-cor">Enviar</button>
+      </footer>
+    </article>
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src=""></script>
 
 </body>
 </html>
